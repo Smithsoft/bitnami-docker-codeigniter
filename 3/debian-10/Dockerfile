@@ -31,4 +31,4 @@ EXPOSE 8000
 
 WORKDIR /app
 ENTRYPOINT [ "/app-entrypoint.sh" ]
-CMD [ "php", "-S", "0.0.0.0:8000" ]
+CMD [ "php", "-S", "0.0.0.0:8000", "-c", "php.ini" ]
